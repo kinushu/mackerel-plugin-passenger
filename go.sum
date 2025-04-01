@@ -1,0 +1,8 @@
+github.com/mackerelio/go-mackerel-plugin v0.1.6-0.20250303093942-cc400a482af0 h1:Sup7MIKQHAIFnY9wc44iNEZGxG4iDZI4wwXHbQfH53U=
+github.com/mackerelio/go-mackerel-plugin v0.1.6-0.20250303093942-cc400a482af0/go.mod h1:27PF7Y7e2yBsGaz1bWTfdyAMYzcPcnXi2ZtfySSccFk=
+github.com/mackerelio/golib v1.2.2-0.20250303075129-b2dd1b61b0d7 h1:PLid0peBkwSCaf4elal5RlanVZzK693zWBouVE12Mww=
+github.com/mackerelio/golib v1.2.2-0.20250303075129-b2dd1b61b0d7/go.mod h1:HbmTln5XGexsi8U7jmr1c77eFe9FjLDIuQo8NRUJ5Ic=
+github.com/nabewata07/mackerel-plugin-passenger v0.0.9 h1:hrMHSp524DQI6bwS7G2cDjZh06USBI81/KVQLych7Tg=
+github.com/nabewata07/mackerel-plugin-passenger v0.0.9/go.mod h1:+9I+FIHSl8tqjN2nZDJOMul3yIop+g9jqzDFt8WxYEc=
+golang.org/x/text v0.17.0 h1:XtiM5bkSOt+ewxlOE/aE/AKEHibwj/6gvWMl9Rsh0Qc=
+golang.org/x/text v0.17.0/go.mod h1:BuEKDfySbSR4drPmRPG/7iBdf8hvFMuRexcpahXilzY=
