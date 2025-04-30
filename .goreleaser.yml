@@ -13,5 +13,5 @@ archives:
     name_template: "snapshot/{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
 release:
   github:
-    owner: mackerelio
+    owner: kinushu 
     name: mackerel-plugin-passenger
