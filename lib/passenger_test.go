@@ -21,7 +21,7 @@ func TestHelperProcess(t *testing.T) {
 		return
 	}
 
-	fmt.Fprintf(os.Stdout, strings.Join(os.Args[3:], " "))
+	fmt.Fprintf(os.Stdout, "%s", strings.Join(os.Args[3:], " "))
 	os.Exit(0)
 }
 
@@ -90,7 +90,7 @@ Requests in top-level queue : 0
   * PID: 18339   Sessions: 0       Processed: 2873    Uptime: 5h 53m 26s
     CPU: 0%%      Memory  : 96M     Last used: 29s ago`
 	// some code here to check arguments perhaps?
-	fmt.Fprintf(os.Stdout, out)
+	fmt.Fprintf(os.Stdout, "%s", out)
 	os.Exit(0)
 }
 
@@ -98,10 +98,10 @@ func TestFetchMetrics(t *testing.T) {
 	p := PassengerPlugin{}
 	execCommand = fakeExecStatus
 	defer func() { execCommand = exec.Command }()
-	expected := map[string]float64 {
+	expected := map[string]float64{
 		"processes_in_queue": 3,
-		"total_processes": 3,
-		"total_memory": 305,
+		"total_processes":    3,
+		"total_memory":       305,
 	}
 	out, err := p.FetchMetrics()
 	if err != nil {
@@ -110,24 +110,23 @@ func TestFetchMetrics(t *testing.T) {
 
 	if out["processes_in_queue"] != expected["processes_in_queue"] {
 		t.Errorf(
-			"Expected %q, got %q",
+			"Expected %v, got %v",
 			expected["processes_in_queue"],
 			out["processes_in_queue"],
 		)
 	}
 	if out["total_processes"] != expected["total_processes"] {
 		t.Errorf(
-			"Expected %q, got %q",
+			"Expected %v, got %v",
 			expected["total_processes"],
 			out["total_processes"],
 		)
 	}
 	if out["total_memory"] != expected["total_memory"] {
 		t.Errorf(
-			"Expected %q, got %q",
+			"Expected %v, got %v",
 			expected["total_memory"],
 			out["total_memory"],
 		)
 	}
 }
-
