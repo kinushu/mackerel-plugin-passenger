@@ -29,3 +29,9 @@ command = "/path/to/mackerel-plugin-passenger -work-dir '/path/to/application_ro
 command = "/path/to/mackerel-plugin-passenger -work-dir '/path/to/application_root' -bundle-path '/path/to/command/bundle' -status-pash '/path/to/command/passenger-status'"
 ```
 
+## How to build
+
+```shell
+make setup
+goreleaser release --snapshot --skip-publish --clean
+```
