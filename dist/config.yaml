@@ -1,7 +1,7 @@
 project_name: mackerel-plugin-passenger
 release:
   github:
-    owner: mackerelio
+    owner: kinushu
     name: mackerel-plugin-passenger
   name_template: '{{.Tag}}'
 builds:
