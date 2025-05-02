@@ -4,7 +4,6 @@ go 1.24.1
 
 require (
 	github.com/mackerelio/go-mackerel-plugin v0.1.6-0.20250303093942-cc400a482af0
-	github.com/kinushu/mackerel-plugin-passenger v0.0.10
 )
 
 require (
