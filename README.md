@@ -1,9 +1,14 @@
 # mackerel-plugin-passenger
 
+## Notice
+
+This repository is a fork of [nabewata07/mackerel-plugin-passenger](https://github.com/nabewata07/mackerel-plugin-passenger).
+It adds support for building binaries on the arm64 architecture.
+
 ## Install
 
 ```
-% mkr plugin install nabewata07/mackerel-plugin-passenger
+% mkr plugin install kinushu/mackerel-plugin-passenger@v0.0.11
 ```
 
 ## Setting
@@ -32,6 +37,6 @@ command = "/path/to/mackerel-plugin-passenger -work-dir '/path/to/application_ro
 ## How to build
 
 ```shell
-make setup
-goreleaser release --snapshot --skip-publish --clean
+% make setup
+% goreleaser release --snapshot --skip-publish --clean
 ```
